@@ -1,0 +1,15 @@
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\AlleimaStackStatus.Repositories.dll.config
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\AlleimaStackStatus.Repositories.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\AlleimaStackStatus.Repositories.pdb
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\AlleimaStackStatus.RepositoryInterfaces.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\EntityFramework.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\AlleimaStackStatus.RepositoryInterfaces.pdb
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\AlleimaStackStatus.RepositoryInterfaces.dll.config
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\EntityFramework.xml
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\obj\Debug\AlleimaStockStatus.Repositories.csproj.AssemblyReference.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\obj\Debug\AlleimaStockStatus.Repositories.csproj.CoreCompileInputs.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\obj\Debug\AlleimaStockStatus.Repositories.csproj.CopyComplete
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\obj\Debug\AlleimaStackStatus.Repositories.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Repositories\obj\Debug\AlleimaStackStatus.Repositories.pdb

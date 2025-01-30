@@ -1,0 +1,6 @@
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Models\bin\Debug\AlleimaStackStatus.Models.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Models\bin\Debug\AlleimaStackStatus.Models.pdb
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Models\obj\Debug\AlleimaStockStatus.Models.csproj.AssemblyReference.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Models\obj\Debug\AlleimaStockStatus.Models.csproj.CoreCompileInputs.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Models\obj\Debug\AlleimaStackStatus.Models.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Models\obj\Debug\AlleimaStackStatus.Models.pdb

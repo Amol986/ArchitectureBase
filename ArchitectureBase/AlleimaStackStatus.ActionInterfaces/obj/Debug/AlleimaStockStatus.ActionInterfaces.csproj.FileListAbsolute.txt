@@ -1,0 +1,9 @@
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\bin\Debug\AlleimaStackStatus.ActionInterfaces.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\bin\Debug\AlleimaStackStatus.ActionInterfaces.pdb
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\bin\Debug\AlleimaStackStatus.Models.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\bin\Debug\AlleimaStackStatus.Models.pdb
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\obj\Debug\AlleimaStockStatus.ActionInterfaces.csproj.AssemblyReference.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\obj\Debug\AlleimaStockStatus.ActionInterfaces.csproj.CoreCompileInputs.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\obj\Debug\AlleimaStockStatus.ActionInterfaces.csproj.CopyComplete
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\obj\Debug\AlleimaStackStatus.ActionInterfaces.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.ActionInterfaces\obj\Debug\AlleimaStackStatus.ActionInterfaces.pdb

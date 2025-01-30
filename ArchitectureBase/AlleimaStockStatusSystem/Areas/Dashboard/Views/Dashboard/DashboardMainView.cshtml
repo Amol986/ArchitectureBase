@@ -1,0 +1,838 @@
+﻿
+@{
+    ViewBag.Title = "DashboardMainView";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="commonSearch_popup hide">
+    <div class="col-md-12">
+        <div class="row p-3 pt-1">
+            <div class="col-md-12 mb-3 mt-0">
+                <div class="advanceSearch_wrapper">
+                    <span>Advance Search</span>
+                    <div class="float-end close_commonsearch"><span class="material-icons material-symbols-outlined">close</span></div>
+                </div>
+            </div>
+            <div class="AdvanceSearch_wrapper">
+                <!-- <div class="col-md-12">
+                    <div class="advanceSearch_wrapper mb-3">
+                        <span>Header</span>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="" placeholder="" />
+                            <label for="floatingSelect">Requested By</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="IC0001 or Product 1" placeholder="" />
+                            <label for="floatingSelect">Item Details</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" value="Enter Name" placeholder="" />
+                            <label for="floatingSelect">Name of Customer</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" name="requestedOnDateDashboardFilter" class="form-control" value="" />
+                            <label for="floatingSelect">Requested On</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-floating mb-3">
+                            <input type="text" name="probableDateDashboardFilter" class="form-control" value="" />
+                            <label for="floatingSelect">Probable Order Date</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 designed_dropdown">
+                        <div class="form-floating mb-3 drop_arrow">
+                            <select class="form-select selectpicker" multiple>
+                                <option value="Reserved">Reserved</option>
+                                <option value="Utilized">Utilized</option>
+                                <option value="Cancelled">Cancelled</option>
+                                <option value="Insufficient">Insufficient</option>
+                            </select>
+                            <label for="floatingSelect">Status</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <hr />
+                <div class="float-end commonSearch_footer">
+                    <button class="btn btn-outline-danger mr1 btn-sm">
+                        <span class="material-icons material-symbols-outlined btn_align">refresh</span>
+                        <span class="top_alignText outlineBtnRed btn_align">Reset</span>
+                    </button>
+                    <button class="btn btn-danger borderRadiusOn btn_align btn-sm close_commonsearch">
+                        <span class="material-icons material-symbols-outlined btn_align ">search</span>
+                        <span class="top_alignText outlineBtnWhite btn_align top_alignText">Search</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toptitlewrapper">
+    <h1 class="mb-3 pageTitle w-98 ">Dashboard</h1>
+</div> <!-- Main Page Start-->
+
+<div class="tab-content p-3 mb-3 " id="ticketTabContent">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item mb-4 borderRadiusOn">
+            <h2 class="accordion-header borderBottomRed" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Summary
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="statusBox h-100">
+                                <div class="statusTitle">Status</div>
+                                <div class="progressDiv w-100 d-flex justify-content-center">
+                                    <div class="sc-gaugeReserved">
+                                        <div class="sc-background">
+                                            <div class="sc-percentageReserved"></div>
+                                            <div class="sc-mask"></div>
+                                            <div class="d-flex">
+                                                <div class="sc-value">50.8</div>
+                                            </div>
+                                        </div>
+                                        <div class="categoryName mt-2 d-flex justify-content-center align-items-center flex-column">
+                                            <div class="count fs-4">125</div>
+                                            <div class="categoryText">Reserved</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sc-gaugeCancelled">
+                                        <div class="sc-background">
+                                            <div class="sc-percentageCancelled"></div>
+                                            <div class="sc-mask"></div>
+                                            <div class="d-flex">
+                                                <div class="sc-value">68.6</div>
+                                            </div>
+                                        </div>
+                                        <div class="categoryName mt-2 d-flex justify-content-center align-items-center flex-column">
+                                            <div class="count fs-4">40</div>
+                                            <div class="categoryText">Cancelled</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sc-gaugeInsufficient">
+                                        <div class="sc-background">
+                                            <div class="sc-percentageInsufficient"></div>
+                                            <div class="sc-mask"></div>
+                                            <div class="d-flex">
+                                                <div class="sc-value">34.9</div>
+                                            </div>
+                                        </div>
+                                        <div class="categoryName mt-2 d-flex justify-content-center align-items-center flex-column">
+                                            <div class="count fs-4">40</div>
+                                            <div class="categoryText">Insufficient</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sc-gaugeUtilized">
+                                        <div class="sc-background">
+                                            <div class="sc-percentageUtilized"></div>
+                                            <div class="sc-mask"></div>
+                                            <div class="d-flex">
+                                                <div class="sc-value">56.5</div>
+                                            </div>
+                                        </div>
+                                        <div class="categoryName mt-2 d-flex justify-content-center align-items-center flex-column">
+                                            <div class="count fs-4">10</div>
+                                            <div class="categoryText">Utilized</div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="progressBar h-100 w-100">
+                                        <div class="barOverflow">
+                                            <div class="bar reserved"></div>
+                                            <div class="percentageVal"><span>50.8</span> %</div>
+                                        </div>
+                                        <div class="categoryName mt-2 d-flex justify-content-center align-items-center flex-column">
+                                            <div class="count fs-4">125</div>
+                                            <div class="categoryText">Reserved</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progressBar h-100 w-100">
+                                        <div class="barOverflow">
+                                            <div class="bar cancelled"></div>
+                                            <div class="percentageVal"><span>68.6</span> %</div>
+                                        </div>
+                                        <div class="categoryName mt-2 d-flex justify-content-center align-items-center flex-column">
+                                            <div class="count fs-4">40</div>
+                                            <div class="categoryText">Cancelled</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progressBar h-100 w-100">
+                                        <div class="barOverflow">
+                                            <div class="bar insufficient"></div>
+                                            <div class="percentageVal"><span>34.9</span> %</div>
+                                        </div>
+                                        <div class="categoryName mt-2 d-flex justify-content-center align-items-center flex-column">
+                                            <div class="count fs-4">40</div>
+                                            <div class="categoryText">Insufficient</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="progressBar h-100 w-100">
+                                        <div class="barOverflow">
+                                            <div class="bar utilized"></div>
+                                            <div class="percentageVal"><span>56.5</span> %</div>
+                                        </div>
+                                        <div class="categoryName mt-2 d-flex justify-content-center align-items-center flex-column">
+                                            <div class="count fs-4">10</div>
+                                            <div class="categoryText">Utilized</div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 ps-0">
+                            <div class="timeAvgBox h-100">
+                                <div class="timeDaysTitle">Average (in Days)</div>
+                                <div class="d-flex">
+                                    <div class="sc-gauge1">
+                                        <div class="sc-background">
+                                            <div class="sc-percentageTat" style="transform: rotate(52.2deg);"></div>
+                                            <div class="sc-mask"></div>
+                                            <span class="sc-value">5.8</span>
+                                        </div>
+                                        <div class="sc-minmax d-flex w-100 justify-content-between">
+                                            <div class="d-flex sc-min-val-text">
+                                                <div class="sc-text me-2">Min</div>
+                                                <div class="sc-min">0</div>
+                                            </div>
+                                            <div class="d-flex sc-max-val-text">
+                                                <div class="sc-text me-2">Max</div>
+                                                <div class="sc-max">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="fw-bold">TAT (Reserved to Utilized)</div>
+                                    </div>
+                                    <div class="sc-gauge2">
+                                        <div class="sc-background">
+                                            <div class="sc-percentageAvgPo"></div>
+                                            <div class="sc-mask"></div>
+                                            <span class="sc-value">30.6</span>
+                                        </div>
+                                        <div class="sc-minmax d-flex w-100 justify-content-between">
+                                            <div class="d-flex sc-min-val-text">
+                                                <div class="sc-text me-2">Min</div>
+                                                <div class="sc-min">25</div>
+                                            </div>
+                                            <div class="d-flex sc-max-val-text">
+                                                <div class="sc-text me-2">Max</div>
+                                                <div class="sc-max">50</div>
+                                            </div>
+                                        </div>
+                                        <div class="fw-bold">Avg. Days to PO (Probable)</div>
+                                    </div>
+                                </div>
+                                <!-- <div class="progressDiv w-100 d-flex justify-content-center">
+                                    <div class="progressBarDay h-100 w-100">
+                                        <div class="barOverflow">
+                                            <div class="bar1 tatData"></div>
+                                            <div class="percentageVal"><span>65</span></div>
+                                        </div>
+                                        <div class="categoryName mt-2">Turn Around Time</div>
+                                    </div>
+                                    <div class="progressBarDay h-100 w-100">
+                                        <div class="barOverflow">
+                                            <div class="bar1 poData"></div>
+                                            <div class="percentageVal"><span>85</span></div>
+                                        </div>
+                                        <div class="categoryName mt-2">Avg. Days to PO</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row g-3 mb-0">
+                        <div class="col-md-8">
+                            <div class="statusBox h-100">
+                                <div class="statusTitle">Status</div>
+                                <div class="cardsMainDiv d-flex flex-wrap">
+                                    <div class="card">
+                                        <div class="card-body reserved">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <div class="stateFig d-flex flex-column align-items-start ms-0 position-relative">
+                                                    <div class="reservedResultCategory fw-bold">Reserved</div>
+                                                    <div><span class="figure fw-bold fs-4">1250</span></div>
+                                                </div>
+                                                <div class="progress" data-percentage="54" title="54%">
+                                                    <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">
+                                                        <div class="d-flex align-items-center"><span class="figure fw-bold fs-4">54</span><span class="percentage ms-2 p-0 figure fw-bold fs-4">%</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body cancelled">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <div class="stateFig d-flex flex-column align-items-start ms-0 position-relative">
+                                                    <div class="cancelledResultCategory fw-bold">Cancelled</div>
+                                                    <div><span class="figure fw-bold fs-4">2440</span></div>
+                                                </div>
+                                                <div class="progress" data-percentage="15" title="15%">
+                                                    <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">
+                                                        <div class="d-flex align-items-center"><span class="figure fw-bold fs-4">15</span><span class="percentage ms-2 p-0 figure fw-bold fs-4">%</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body utilized">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <div class="stateFig d-flex flex-column align-items-start ms-0">
+                                                    <div class="utilizedResultCategory fw-bold">Utilized</div>
+                                                    <div><span class="figure fw-bold fs-4">2300</span></div>
+                                                </div>
+                                                <div class="progress" data-percentage="15" title="15%">
+                                                    <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">
+                                                        <div class="d-flex align-items-center"><span class="figure fw-bold fs-4">15</span><span class="percentage ms-2 p-0 figure fw-bold fs-4">%</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body insufficient">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <div class="stateFig d-flex flex-column align-items-start ms-0">
+                                                    <div class="insufficientResultCategory fw-bold">Insufficient</div>
+                                                    <div><span class="figure fw-bold fs-4">1440</span></div>
+                                                </div>
+                                                <div class="progress" data-percentage="10" title="10%">
+                                                    <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">
+                                                        <div class="d-flex align-items-center"><span class="figure fw-bold fs-4">10</span><span class="percentage ms-2 p-0 figure fw-bold fs-4">%</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="timeAvgBox h-100">
+                                <div class="timeDaysTitle">Time Average</div>
+                                <div class="cardsMainDiv d-flex flex-wrap">
+                                    <div class="card">
+                                        <div class="card-body tatData">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <div class="stateFig d-flex flex-column align-items-start ms-0">
+                                                    <div class="utilizedResultCategory fw-bold">Turn Around Time</div>
+                                                </div>
+                                                <div class="progress" data-percentage="25" title="25">
+                                                    <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">
+                                                        <div class="d-flex align-items-center"><span class="figure fw-bold fs-4">25</span><span class="percentage ms-2 p-0 figure fw-bold fs-6">Days</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body poData">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <div class="stateFig d-flex flex-column align-items-start ms-0">
+                                                    <div class="utilizedResultCategory fw-bold">Avg. Days to PO</div>
+                                                </div>
+                                                <div class="progress" data-percentage="15" title="15">
+                                                    <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">
+                                                        <div class="d-flex align-items-center"><span class="figure fw-bold fs-4">15</span><span class="percentage ms-2 p-0 figure fw-bold fs-6">Days</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body tatData">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <div class="stateFig d-flex flex-column align-items-start ms-0">
+                                                    <div class="tatDataResultCategory fw-bold">Turn Around Time</div>
+                                                    <div><span class="figure fw-bold fs-4">25</span><span class="percentage ms-2">Days</span></div>
+                                                </div>
+                                                <div class="tatDataIconDiv w-auto text-center">
+                                                    <span class="material-icons material-symbols-outlined btn_align" title="tatData">update</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body poData">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <div class="stateFig d-flex flex-column align-items-start ms-0">
+                                                    <div class="poDataResultCategory fw-bold">Avg. Days to PO</div>
+                                                    <div><span class="figure fw-bold fs-4">15</span><span class="percentage ms-2">Days</span></div>
+                                                </div>
+                                                <div class="poDataIconDiv w-auto text-center">
+                                                    <span class="material-icons material-symbols-outlined btn_align" title="tatData">schedule</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item mb-4 borderRadiusOn">
+            <h2 class="accordion-header borderBottomRed" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">Data Insights</button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <h4 class="h6 fw-bold mb-4">ITEM MASTER (Top N Utilized)</h4>
+                    <!-- Table for displaying data -->
+                    <table id="myTable" class="table dataInsightTable mt-3">
+                        <thead>
+                            <tr>
+                                <th data-column="code" data-order="desc">Item Code</th>
+                                <th data-column="desc" data-order="desc">Description</th>
+                                <th data-column="inHand" data-order="desc">Stock in Hand</th>
+                                <th data-column="uom" data-order="desc">UoM (kg/N)</th>
+                                <th data-column="reserved" data-order="desc">Stock Reserved</th>
+                                <th data-column="utilized" data-order="desc">Stock Utilized</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ITC00005</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 5">Product Desc 5</td>
+                                <td>2356</td>
+                                <td>N</td>
+                                <td>52</td>
+                                <td>50000</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00006</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 6">Product Desc 6</td>
+                                <td>2450</td>
+                                <td>N</td>
+                                <td>45</td>
+                                <td>25000</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00010</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 10">Product Desc 10</td>
+                                <td>255</td>
+                                <td>kg</td>
+                                <td>25</td>
+                                <td>4500</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00004</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 4">Product Desc 4</td>
+                                <td>245</td>
+                                <td>kg</td>
+                                <td>45</td>
+                                <td>4300</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00003</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 3">Product Desc 3</td>
+                                <td>250</td>
+                                <td>N</td>
+                                <td>35</td>
+                                <td>2500</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00007</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 7">Product Desc 7</td>
+                                <td>235</td>
+                                <td>kg</td>
+                                <td>25</td>
+                                <td>2500</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00008</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 8">Product Desc 8</td>
+                                <td>2540</td>
+                                <td>kg</td>
+                                <td>245</td>
+                                <td>2350</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00009</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 9">Product Desc 9</td>
+                                <td>254</td>
+                                <td>N</td>
+                                <td>25</td>
+                                <td>2350</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00001</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 1">Product Desc 1</td>
+                                <td>250</td>
+                                <td>N</td>
+                                <td>45</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>ITC00002</td>
+                                <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Product Desc 2">Product Desc 2</td>
+                                <td>523</td>
+                                <td>N</td>
+                                <td>36</td>
+                                <td>250</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Pagination Controls -->
+                    <nav class="d-flex justify-content-between align-items-center">
+                        <!-- Dropdown to select number of rows per page -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label for="rowCount" class="form-label me-2 mb-0">Show Rows:</label>
+                            <select id="rowCount" class="form-select w-auto">
+                                <option value="5">5</option>
+                                <option value="10" selected>10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+
+                        <!-- Display the total records and current range -->
+                        <div id="recordInfo" class="text-end">
+                            Showing 1 - 10 of 4
+                        </div>
+
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <button class="page-link" id="firstPage">First</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link" id="prevPage">Prev</button>
+                            </li>
+                            <li class="page-item">
+                                <select id="pageSelect" class="form-select">
+                                    <!-- Page numbers will be dynamically added here -->
+                                </select>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link" id="nextPage">Next</button>
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link" id="lastPage">Last</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item mb-4 borderRadiusOn">
+            <h2 class="accordion-header borderBottomRed" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Data Trends
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <div class="radioSwitch d-flex justify-content-end">
+                        <div class="me-3">
+                            <span><b>UoM</b></span>
+                        </div>
+                        <div class="form-check me-3">
+                            <input class="form-check-input" checked="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Kg</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">N</label>
+                        </div>
+                    </div>
+                    <div class="graphDiv" id="graphDiv"><div id="container"></div></div>
+                    <div class="graphDiv1" id="graphDiv1" style="display: none;"><div id="container1"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item mb-4 borderRadiusOn">
+            <h2 class="accordion-header borderBottomRed" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Results grid
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                    <div class="d-flex justify-content-end statusCountSortingBox">
+                        <div class="checkbox pendingapproval">
+                            <label class="form-check-label" for="PendingApproval">
+                                <input class="form-check-input" type="checkbox" value="reservedRow" id="PendingApproval">
+                                Reserved <span class="totalCount">3</span>
+                            </label>
+                        </div>
+                        <div class="checkbox approval">
+                            <label class="form-check-label" for="Approved">
+                                <input class="form-check-input" type="checkbox" value="utilizedRow" id="Approved">
+                                Utilized<span class="totalCount">1</span>
+                            </label>
+                        </div>
+                        <div class="checkbox rework">
+                            <input class="form-check-input" type="checkbox" value="insufficientRow" id="Rework">
+                            <label class="form-check-label" for="Rework">
+                                Insufficient<span class="totalCount">1</span>
+                            </label>
+                        </div>
+                        <div class="checkbox reject">
+                            <input class="form-check-input" type="checkbox" value="cancelledRow" id="Rejected">
+                            <label class="form-check-label" for="Rejected">
+                                Cancelled<span class="totalCount">2</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-12 statusCountSortingGrid">
+                        <div class="row p-3 pt-2 table-responsive">
+                            <table id="myTable1" class="table table-hover dashboardResultGrid">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Order ID</th>
+                                        <th scope="col">Requested By</th>
+                                        <th scope="col">Requested On</th>
+                                        <th scope="col">Item Master</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Probable Order Date</th>
+                                        <th class="text-center" scope="col">Status</th>
+                                        <th class="no-filter" scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="reservedRow">
+                                        <td>SSS/202410/000001</td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="right" title="John Doe (Sales)">John Doe (Sales)</td>
+                                        <td>13-Sep-2024 <strong>11:45 AM</strong></td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="left" title="IC0001 – Product 1 (Stock - 445 kg)">IC0001 – Product 1 (Stock - 445 kg)</td>
+                                        <td>25</td>
+                                        <td>15-Nov-2024</td>
+                                        <td class="text-center">
+                                            <span class="status_badge status_badge2 text-white">
+                                                Reserved
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <span class="material-icons material-symbols-outlined icon_kanthal">
+                                                    visibility
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="utilizedRow">
+                                        <td>SSS/202410/000002</td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="right" title="John Doe (Sales)">John Doe (Sales)</td>
+                                        <td>13-Aug-2024 <strong>11:45 AM</strong></td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="left" title="IC0002 – Product 2 (Stock - 1200 N)">IC0002 – Product 2 (Stock - 1200 N)</td>
+                                        <td>50</td>
+                                        <td>25-Nov-2024</td>
+                                        <td class="text-center">
+                                            <span class="status_badge status_badge4 text-white">
+                                                Utilized
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <span class="material-icons material-symbols-outlined icon_kanthal">
+                                                    visibility
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="reservedRow">
+                                        <td>SSS/202410/000003</td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="right" title="John Doe (Sales)">John Doe (Sales)</td>
+                                        <td>10-Aug-2024 <strong>11:45 AM</strong></td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="left" title="IC0003 – Product 3 (Stock - 125 kg)">IC0003 – Product 3 (Stock - 125 kg)</td>
+                                        <td>12</td>
+                                        <td>01-Nov-2024</td>
+                                        <td class="text-center">
+                                            <span class="status_badge status_badge2 text-white">
+                                                Reserved
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <span class="material-icons material-symbols-outlined icon_kanthal">
+                                                    visibility
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="insufficientRow">
+                                        <td>SSS/202410/000004</td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="right" title="John Doe (Sales)">John Doe (Sales)</td>
+                                        <td>09-Jul-2024 <strong>11:45 AM</strong></td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="left" title="IC0001 – Product 1 (Stock - 445 N)">IC0001 – Product 1 (Stock - 445 N)</td>
+                                        <td>35</td>
+                                        <td>09-Nov-2024</td>
+                                        <td class="text-center">
+                                            <span class="status_badge status_badge1 text-white">
+                                                Insufficient
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <span class="material-icons material-symbols-outlined icon_kanthal">
+                                                    visibility
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="reservedRow">
+                                        <td>SSS/202410/000005</td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="right" title="John Doe (Sales)">John Doe (Sales)</td>
+                                        <td>06-Jun-2024 <strong>11:45 AM</strong></td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="left" title="IC0002 – Product 2 (Stock - 1200 kg)">IC0002 – Product 2 (Stock - 1200 kg)</td>
+                                        <td>45</td>
+                                        <td>14-Nov-2024</td>
+                                        <td class="text-center">
+                                            <span class="status_badge status_badge2 text-white">
+                                                Reserved
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <span class="material-icons material-symbols-outlined icon_kanthal">
+                                                    visibility
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="cancelledRow">
+                                        <td>SSS/202410/000006</td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="right" title="John Doe (Sales)">John Doe (Sales)</td>
+                                        <td>06-May-2024 <strong>11:45 AM</strong></td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="left" title="IC0004 – Product 4 (Stock - 2000 N)">IC0004 – Product 4 (Stock - 2000 N)</td>
+                                        <td>65</td>
+                                        <td>15-Dec-2024</td>
+                                        <td class="text-center">
+                                            <span class="status_badge status_badge3 text-white">
+                                                Cancelled
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <span class="material-icons material-symbols-outlined icon_kanthal">
+                                                    visibility
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="cancelledRow">
+                                        <td>SSS/202410/000007</td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="right" title="John Doe (Sales)">John Doe (Sales)</td>
+                                        <td>15-Apr-2024 <strong>11:45 AM</strong></td>
+                                        <td class="text-truncate" data-bs-toggle="tooltip" data-bs-placement="left" title="IC0005 – Product 5 (Stock - 400 kg)">IC0005 – Product 5 (Stock - 400 kg)</td>
+                                        <td>85</td>
+                                        <td>18-Dec-2024</td>
+                                        <td class="text-center">
+                                            <span class="status_badge status_badge3 text-white">
+                                                Cancelled
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                                                <span class="material-icons material-symbols-outlined icon_kanthal">
+                                                    visibility
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Pagination Controls -->
+                            <nav class="d-flex justify-content-between align-items-center">
+                                <!-- Dropdown to select number of rows per page -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="rowCount1" class="form-label me-2 mb-0">Show Rows:</label>
+                                    <select id="rowCount1" class="form-select w-auto">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                </div>
+
+                                <!-- Display the total records and current range -->
+                                <div id="recordInfo1" class="text-end">
+                                    Showing 1 - 10 of 4
+                                </div>
+
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <button class="page-link" id="firstPage1">First</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link" id="prevPage1">Prev</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <select id="pageSelect1" class="form-select">
+                                            <!-- Page numbers will be dynamically added here -->
+                                        </select>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link" id="nextPage1">Next</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link" id="lastPage1">Last</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

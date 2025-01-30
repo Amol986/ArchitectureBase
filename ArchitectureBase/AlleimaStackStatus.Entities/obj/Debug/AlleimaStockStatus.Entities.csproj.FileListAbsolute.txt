@@ -1,0 +1,12 @@
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\bin\Debug\AlleimaStackStatus.Entities.dll.config
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\bin\Debug\AlleimaStackStatus.Entities.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\bin\Debug\AlleimaStackStatus.Entities.pdb
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\bin\Debug\EntityFramework.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\bin\Debug\EntityFramework.xml
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\obj\Debug\AlleimaStockStatus.Entities.csproj.AssemblyReference.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\obj\Debug\AlleimaStockStatus.Entities.csproj.CoreCompileInputs.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\obj\Debug\AlleimaStockStatus.Entities.csproj.CopyComplete
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\obj\Debug\AlleimaStackStatus.Entities.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.Entities\obj\Debug\AlleimaStackStatus.Entities.pdb

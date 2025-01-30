@@ -1,0 +1,10 @@
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\bin\Debug\AlleimaStackStatus.LogInterfaces.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\bin\Debug\AlleimaStackStatus.LogInterfaces.pdb
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\bin\Debug\log4net.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\bin\Debug\log4net.pdb
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\bin\Debug\log4net.xml
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\obj\Debug\AlleimaStockStatus.LogInterfaces.csproj.AssemblyReference.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\obj\Debug\AlleimaStockStatus.LogInterfaces.csproj.CoreCompileInputs.cache
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\obj\Debug\AlleimaStockStatus.LogInterfaces.csproj.CopyComplete
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\obj\Debug\AlleimaStackStatus.LogInterfaces.dll
+D:\NetCore\StockStatusSystem\AlleimaStockStatusSystem\AlleimaStackStatus.LogInterfaces\obj\Debug\AlleimaStackStatus.LogInterfaces.pdb
